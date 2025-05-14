@@ -107,3 +107,51 @@ This structured approach ensures learners not only build technical skills but al
 - Relationships:
   - One user can leave multiple reviews
   - One property can have multiple reviews
+
+
+## 🧩 Feature Breakdown
+### 1. 🧑‍💼 User Management
+Handles user registration, authentication (login/logout), and profile updates.  
+Users can sign up as guests or hosts, manage their personal info, and access their dashboard securely.
+
+---
+
+### 2. 🏡 Property Management
+Allows hosts to create, edit, and delete property listings.  
+Each property includes key details like title, description, price, and location, helping guests find suitable accommodations.
+
+---
+
+### 3. 📅 Booking System
+Enables guests to book available properties for specific dates.  
+Users can manage check-in/check-out, number of guests, and view their booking history.
+
+---
+
+### 4. 💳 Payment Processing
+Manages payments for bookings with status tracking.  
+This ensures secure and accurate transactions between guests and property owners.
+
+---
+
+### 5. 🌟 Review System
+Allows guests to leave ratings and feedback after their stay.  
+Helps maintain quality and trust across the platform by allowing future guests to read real reviews.
+
+---
+
+### 6. ⚡ API Access (REST & GraphQL)
+Provides both RESTful and GraphQL API access for frontend integration.  
+Developers can retrieve and modify data easily through flexible endpoints.
+
+---
+
+### 7. 🔐 Security & Permissions
+Implements user authentication and access control.  
+Ensures that only authorized users can perform sensitive actions like updating properties or booking.
+
+---
+
+### 8. 🚀 CI/CD & Deployment
+Uses GitHub Actions for continuous integration and Docker for containerized deployment.  
+This helps keep the project tested, up-to-date, and production-ready.
