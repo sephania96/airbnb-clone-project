@@ -41,3 +41,69 @@ CI/CD Pipeline Integration:
 Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
 
 This structured approach ensures learners not only build technical skills but also adopt a mindset geared toward problem-solving, scalability, and industry-grade project execution.
+
+## 🗃️ Database Design
+### 1. Users
+- Fields:
+  - `id`: Unique identifier
+  - `username`: The user’s login name
+  - `email`: Contact email
+  - `is_host`: Boolean to check if user can list properties
+  - `bio`: Short user profile text
+- Relationships:
+  - One user can create many properties
+  - One user can make many bookings
+  - One user can leave many reviews
+
+---
+
+### 2. Properties
+- Fields:
+  - `id`: Unique property ID
+  - `owner`: Linked to the user who created the listing
+  - `title`: Property name
+  - `description`: Detailed info about the property
+  - `price`: Cost per night
+- Relationships:
+  - Each property belongs to one user (host)
+  - One property can have many bookings
+  - One property can receive many reviews
+
+---
+
+### 3. Bookings
+- Fields:
+  - `id`: Unique booking ID
+  - `user`: The user who booked
+  - `property`: The property being booked
+  - `check_in`: Start date
+  - `check_out`: End date
+- Relationships:
+  - Each booking is made by one user
+  - Each booking is for one property
+  - Each booking can have one payment
+
+---
+
+### 4. Payments
+- Fields:
+  - `id`: Unique payment ID
+  - `booking`: The booking being paid for
+  - `amount`: Total cost
+  - `status`: Paid/failed/pending
+  - `timestamp`: When payment was made
+- Relationships:
+  - Each payment is for one booking
+
+---
+
+### 5. Reviews
+- Fields:
+  - `id`: Unique review ID
+  - `user`: Reviewer
+  - `property`: Reviewed property
+  - `rating`: Score from 1–5
+  - `comment`: Written feedback
+- Relationships:
+  - One user can leave multiple reviews
+  - One property can have multiple reviews
