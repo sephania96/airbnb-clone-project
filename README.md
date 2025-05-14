@@ -189,3 +189,29 @@ Essential for securing sensitive data like passwords and payments.
 - 🏡 **Platform Integrity**: Ensures only verified users can make bookings or post listings.  
 - 🚨 **Prevent Abuse**: Rate limiting and permission rules help stop bots, spam, and unauthorized access.
 
+
+
+## 🚀 CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment**.  
+It is a process where code changes are automatically tested, built, and deployed to staging or production environments.
+
+### Why It's Important
+
+- 🧪 **Test Automation**: Ensures code is always tested before being merged or deployed.
+- 🚀 **Faster Releases**: Speeds up deployment by removing manual steps.
+- 🔁 **Consistency**: Reduces human error by automating repetitive tasks.
+- 👥 **Team Collaboration**: Allows teams to work together without breaking shared code.
+
+### Tools We Will Use
+
+- **GitHub Actions**: Automates testing and deployment when code is pushed to GitHub.
+- **Docker**: Packages the app into containers so it runs the same everywhere (dev, test, prod).
+- **Docker Hub** *(optional)*: Stores built images for production deployment.
+- **Heroku / Render / Railway** *(or similar)*: For actual hosting and automatic deploys.
+
+CI/CD is a crucial part of building professional-grade, scalable software systems.
+
+
