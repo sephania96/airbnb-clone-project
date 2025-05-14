@@ -155,3 +155,37 @@ Ensures that only authorized users can perform sensitive actions like updating p
 ### 8. 🚀 CI/CD & Deployment
 Uses GitHub Actions for continuous integration and Docker for containerized deployment.  
 This helps keep the project tested, up-to-date, and production-ready.
+
+
+## 🔐 API Security
+### Key Security Measures
+
+#### 1. Authentication
+We use Token and Session Authentication to verify user identity.  
+Only logged-in users can access protected routes such as booking a property or editing their profile.
+
+#### 2. Authorization
+Different permissions are enforced based on user roles.  
+For example, only hosts can create or manage their property listings, while guests can only book and review.
+
+#### 3. Rate Limiting (Planned)
+Limits the number of requests a user or IP address can make in a short period.  
+Prevents abuse like spamming API endpoints or brute-force login attempts.
+
+#### 4. Data Validation
+All incoming data is validated using serializers.  
+This prevents invalid or malicious data from being stored in the database.
+
+#### 5. HTTPS (Deployment Stage)
+Ensures all data between frontend and backend is encrypted.  
+Essential for securing sensitive data like passwords and payments.
+
+---
+
+### Why Security Is Crucial
+
+- 🧑‍💼 **User Data Protection**: Users trust the platform with personal information (emails, names, etc.).  
+- 💳 **Payment Security**: Payments must be processed without leaks, tampering, or fraud.  
+- 🏡 **Platform Integrity**: Ensures only verified users can make bookings or post listings.  
+- 🚨 **Prevent Abuse**: Rate limiting and permission rules help stop bots, spam, and unauthorized access.
+
